@@ -5,6 +5,16 @@
 </ion-header>
 
 <ion-content class="ion-text-center">
-  <ion-button color="primary" [routerLink]="['/alert']" >Alert</ion-button>
-  <ion-button color="success" [routerLink]="['/action-sheet']" >Action Sheet</ion-button>
+
+  <ion-list>
+    <ion-item *ngFor="let comp of componentes" [routerLink]="comp.route" detail>
+      <ion-icon slot="start" [name]="comp.icon"></ion-icon>
+      <ion-label>
+        {{comp.name}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+ <!--  <ion-button color="primary" [routerLink]="['/alert']" >Alert</ion-button>
+  <ion-button color="success" [routerLink]="['/action-sheet']" >Action Sheet</ion-button> -->
 </ion-content>
