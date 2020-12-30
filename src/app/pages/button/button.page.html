@@ -1,0 +1,55 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Regresar"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Buttons</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="danger">
+        <ion-icon name="logo-pinterest" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button color="danger">
+        <ion-icon name="heart" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" class="ion-text-center">
+
+  <!-- botones normales -->
+  <ion-button size="small" expand="block">Small</ion-button>
+  <ion-button size="default"  expand="block">Default</ion-button>
+  <ion-button size="large"  expand="block">Large</ion-button>
+
+  <!-- anchor -->
+
+  <ion-button class="ion-margin-top" expand="block" color="tertiary" [routerLink]="['/avatar']" routerLinkActive="active" >Ruta</ion-button>
+
+  <!-- ion-row + ion-col -->
+
+  <ion-row>
+    <ion-col>
+      <ion-button  expand="block" color="tertiary" [routerLink]="['/']" routerLinkActive="active" >Home</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button  expand="block" color="tertiary" [routerLink]="['/alert']" routerLinkActive="active" >Alert</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <!-- fILL -->
+
+  <ion-button class="ion-margin-top" fill="clear">Clear</ion-button>
+  <ion-button class="ion-margin-top" fill="outline">Outline</ion-button>
+  <ion-button class="ion-margin-top" fill="solid">Solid</ion-button>
+
+
+</ion-content>

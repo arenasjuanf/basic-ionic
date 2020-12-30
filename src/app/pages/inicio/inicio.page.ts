@@ -17,6 +17,26 @@ export class InicioPage implements OnInit {
       name: "Alert",
       route: "/alert",
     },
+    {
+      icon: "beaker",
+      name: "Avatar",
+      route: "/avatar",
+    },
+    {
+      icon: "radio-button-on",
+      name: "botones y router",
+      route: "/button",
+    },
+    {
+      icon: "square-outline",
+      name: "card",
+      route: "/card",
+    },
+    {
+      icon: "checkbox",
+      name: "checkbox",
+      route: "/checkbox",
+    },
   ];
   constructor() {}
 
