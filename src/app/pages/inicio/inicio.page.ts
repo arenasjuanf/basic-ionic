@@ -37,6 +37,16 @@ export class InicioPage implements OnInit {
       name: "checkbox",
       route: "/checkbox",
     },
+    {
+      icon: "time",
+      name: "date-time",
+      route: "/date-time",
+    },
+    {
+      icon: "add-circle",
+      name: "fab",
+      route: "/fab",
+    },
   ];
   constructor() {}
 
