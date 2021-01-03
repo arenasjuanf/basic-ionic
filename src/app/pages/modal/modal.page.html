@@ -1,0 +1,13 @@
+<app-header titulo="modal"></app-header>
+
+<ion-content>
+  <ion-button color="primary" expand="block" (click)="presentModal()">
+    Abrir Modal
+  </ion-button>
+  <ion-item *ngIf="datos">
+    <ion-label class="ion-text-center" >
+      {{datos | titlecase }}
+    </ion-label>
+  </ion-item>
+  
+</ion-content>

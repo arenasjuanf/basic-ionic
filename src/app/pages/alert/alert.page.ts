@@ -48,6 +48,5 @@ export class AlertPage implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(){
-    console.log('destroy');
   }
 }

@@ -11,4 +11,8 @@ export class DataService {
   getUsers(): Observable<any> {
     return this.http.get("https://jsonplaceholder.typicode.com/users");
   }
+
+  getMenuOpts(){
+    return this.http.get('/assets/data/menu.json')
+  }
 }
